@@ -190,7 +190,7 @@
                         <h2 class="heading-style-2">Apple AirPods Max Wireless Over-Ear Headphones.</h2>
                         <p class="headphone-desc">Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control. Bluetooth Headphones for iPhone</p>
                         <h3 class="heading-style-2 price">₹59,900</h3>
-                        <button class="btn">Buy Now</button>
+                        <button class="btn buy-btn">BUY NOW</button>
                     </div>
                 </div>
             </div>
@@ -264,13 +264,24 @@
         </div>
     </footer>
 
-    <!-- Buy Now Modal -->
+    <!-- Billing Modal -->
     <div id="buyModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content billing-content">
             <span class="close-btn">&times;</span>
-            <h2 class="neon-pink">Ready to Purchase?</h2>
-            <p>Please visit any of our <span class="neon-green">Tirrupur Branches</span> to experience and purchase this device in person.</p>
-            <a href="#branches" class="btn modal-btn">View Locations</a>
+            <h2 class="neon-pink">Checkout</h2>
+            <p style="margin-bottom: 1.5rem;">Enter your details to complete the purchase.</p>
+            <form id="billingForm" class="billing-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="Delivery Address" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn modal-btn">Confirm Order</button>
+            </form>
         </div>
     </div>
 

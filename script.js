@@ -159,9 +159,16 @@ if (buyButtons && modal) {
         modal.classList.remove('show');
     });
 
-    modalActionBtn.addEventListener('click', () => {
-        modal.classList.remove('show');
-    });
+    const billingForm = document.getElementById('billingForm');
+
+    if (billingForm) {
+        billingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            modal.classList.remove('show');
+            alert('Thank you! Your order has been placed successfully.');
+            billingForm.reset();
+        });
+    }
 
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
