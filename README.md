@@ -1,5 +1,8 @@
 # Tirrupur Mobile Website
 
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://tirrupur-mobile.vercel.app)
+[![Website Preview](https://img.shields.io/badge/Live_Demo-View_Now-brightgreen)](https://tirrupur-mobile.vercel.app)
+
 Welcome to the **Tirrupur Mobile** project—a modern, sleek, and highly interactive storefront designed to provide a premium digital experience. The site leverages dark-mode aesthetics, neon accents (pink, green, red), and glassmorphism to showcase the latest smartphones and high-end accessories.
 
 ## 🚀 Features
