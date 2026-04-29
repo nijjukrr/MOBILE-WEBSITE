@@ -140,3 +140,32 @@ if (slider) {
     images[4].classList.add('previous');
     images[0].classList.add('active');
 }
+
+// Buy Now Modal Logic
+const buyButtons = document.querySelectorAll('.buy-btn');
+const modal = document.getElementById('buyModal');
+const closeBtn = document.querySelector('.close-btn');
+const modalActionBtn = document.querySelector('.modal-btn');
+
+if (buyButtons && modal) {
+    buyButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('show');
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.classList.remove('show');
+    });
+
+    modalActionBtn.addEventListener('click', () => {
+        modal.classList.remove('show');
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('show');
+        }
+    });
+}
